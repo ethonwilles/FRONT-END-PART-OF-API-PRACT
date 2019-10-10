@@ -1,0 +1,23 @@
+#root {
+  font-family: sans-serif;
+  color: #00cb78;
+}
+
+.App {
+  background-color: #454545;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+}
+
+.done {
+  color: black;
+  text-decoration: line-through;
+}
