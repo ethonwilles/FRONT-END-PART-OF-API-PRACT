@@ -11,7 +11,7 @@ class App extends React.Component {
     };
   }
   componentDidMount() {
-    fetch("http://localhost:5000/todos")
+    fetch("https://ecw-todo-list-app.herokuapp.com/todos")
       .then(res => {
         return res.json();
       })
@@ -45,7 +45,7 @@ class App extends React.Component {
   addTodo = event => {
     event.preventDefault();
 
-    fetch("http://localhost:5000/todo", {
+    fetch("https://ecw-todo-list-app.herokuapp.com/todo", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
@@ -65,7 +65,7 @@ class App extends React.Component {
 
   deleteTodo = id => {
     console.log(id);
-    fetch(`http://localhost:5000/todo/${id}`, {
+    fetch(`https://ecw-todo-list-app.herokuapp.com/todo/${id}`, {
       method: "DELETE"
     });
   };
